@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AltStable Companion</title>
+  <meta name="description" content="A free Windows app for the AltStable addon for World of Warcraft: Forever: portraits for the Roster, and your characters in a Google Sheet.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site">
+    <nav>
+      <span class="brand">Spotnick2</span>
+      <a href="/altstable-companion/">AltStable Companion</a>
+      <a href="/altstable-companion/privacy/">Privacy policy</a>
+      <a href="https://github.com/Spotnick2/AltStableCompanion">Source code</a>
+    </nav>
+  </header>
+  <main>
+    <h1>AltStable Companion</h1>
+    <p class="lede">A free, open-source Windows app for players of the
+      <a href="https://github.com/Spotnick2/AltStable">AltStable</a> addon for World of Warcraft: Forever.</p>
+
+    <a class="button" href="https://github.com/Spotnick2/AltStableCompanion/releases">Download</a>
+    <a class="button secondary" href="https://github.com/Spotnick2/AltStableCompanion#readme">Read the guide</a>
+
+    <figure>
+      <img src="roster.jpg" alt="Four characters standing around a campfire in AltStable's Roster" width="1920" height="1080" loading="lazy">
+      <figcaption>Your characters in AltStable's Roster, drawn from the portraits the app makes.</figcaption>
+    </figure>
+
+    <h2>What it does</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Roster portraits</h3>
+        <p>Turns the portraits you capture in the game with <code>/alts portrait</code> into the cutouts AltStable's Roster draws your characters with.</p>
+      </div>
+      <div class="card">
+        <h3>Portraits from the armory</h3>
+        <p>Optional: takes each character's picture from Blizzard's armory, with no capture needed.</p>
+      </div>
+      <div class="card">
+        <h3>Enhanced portraits</h3>
+        <p>Optional, off by default: asks the Codex CLI on your PC, with your own ChatGPT account, for a nicer picture of each portrait.</p>
+      </div>
+      <div class="card">
+        <h3>Google Sheet</h3>
+        <p>Optional, off until you connect: your characters in a spreadsheet in your own Google Drive.</p>
+      </div>
+    </div>
+
+    <h2>Your characters in a Google Sheet</h2>
+    <p>Connect your Google account in the app's settings, and it writes one spreadsheet, named
+      AltStable, in your own Google Drive: your characters, their skills, reputations and gear,
+      in four tabs you can filter and sort. It updates it again on its own some minutes after the
+      game closes, or whenever you press <strong>Export now</strong>.</p>
+
+    <figure>
+      <img src="sheet.png" alt="The Characters tab of the AltStable spreadsheet: portraits, class-coloured names, levels, coin, hearthstones and each faction's totals" width="1860" height="812" loading="lazy">
+      <figcaption>The Characters tab. Names and guilds are blurred here.</figcaption>
+    </figure>
+
+    <h3>What it does with your Google account</h3>
+    <ul>
+      <li>It asks for one permission, Google's <code>drive.file</code>: the files the app creates
+        itself. It cannot see, read or change any other file in your Drive.</li>
+      <li>It uses that access only to create, find again and write your AltStable spreadsheet.
+        Your Google data goes to nobody else: there is no server of ours, and the developer
+        receives nothing.</li>
+      <li>Your sign-in stays on your PC, encrypted for your Windows user. <strong>Disconnect</strong>
+        deletes it and asks Google to cancel it.</li>
+    </ul>
+    <p>The <a href="/altstable-companion/privacy/">privacy policy</a> says exactly what the app reads,
+      keeps and sends, for every feature.</p>
+
+    <h2>Get it</h2>
+    <p>Download <code>AltStableCompanion-&lt;version&gt;-win-x64.exe</code> from the
+      <a href="https://github.com/Spotnick2/AltStableCompanion/releases">releases page</a> and run it:
+      it is the whole app, with nothing to install, and it lives in the tray. It needs Windows 10
+      or 11 (64-bit) and the <a href="https://www.curseforge.com/wow/addons/altstable">AltStable addon</a>.
+      The <a href="https://github.com/Spotnick2/AltStableCompanion#readme">guide</a> covers the rest.</p>
+    <p>Questions or problems: <a href="https://github.com/Spotnick2/AltStableCompanion/issues">open an issue</a>.</p>
+
+    <footer>
+      <a href="/altstable-companion/privacy/">Privacy policy</a> ·
+      <a href="https://github.com/Spotnick2/AltStableCompanion">Source code</a> ·
+      Not affiliated with or endorsed by Blizzard Entertainment or Google.
+    </footer>
+  </main>
+</body>
+</html>
